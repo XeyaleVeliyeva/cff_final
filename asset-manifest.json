@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/cff-final/static/css/main.850ba2fb.css",
+    "main.js": "/cff-final/static/js/main.7bbf92df.js",
+    "static/js/453.fb67ec70.chunk.js": "/cff-final/static/js/453.fb67ec70.chunk.js",
+    "static/media/tehsil.svg": "/cff-final/static/media/tehsil.911676f11189b5affb7c364beb23d062.svg",
+    "static/media/logo.svg": "/cff-final/static/media/logo.1e7ff36b0408d35ece20cf55e86b49f6.svg",
+    "index.html": "/cff-final/index.html",
+    "main.850ba2fb.css.map": "/cff-final/static/css/main.850ba2fb.css.map",
+    "main.7bbf92df.js.map": "/cff-final/static/js/main.7bbf92df.js.map",
+    "453.fb67ec70.chunk.js.map": "/cff-final/static/js/453.fb67ec70.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.850ba2fb.css",
+    "static/js/main.7bbf92df.js"
+  ]
+}
