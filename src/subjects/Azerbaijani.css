@@ -1,0 +1,281 @@
+.header-azerbaijani {
+  width: 100%;
+  padding: 20px;
+  background-color: #9fe5fc;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-azerbaijani h1 {
+  font-size: 2rem;
+  color: #05445e;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.logo {
+  width: 90px;
+}
+
+.azerbaijani-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container-azerbaijani {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.row-azerbaijani {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.attendance-azerbaijani,
+.ksq-azerbaijani,
+.homework-azerbaijani,
+.material-azerbaijani {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  flex: 1 1 calc(50% - 10px); /* 2 qutu bir sırada */
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  min-width: 240px;
+}
+
+.attendance-azerbaijani:hover, .ksq-azerbaijani:hover, .homework-azerbaijani:hover, .material-azerbaijani:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.container-azerbaijani p {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.attendance-azerbaijani button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.attendance-azerbaijani button:hover {
+  background-color: #0056b3;
+}
+.ksq-azerbaijani button {
+  background-color: #e3db0a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.ksq-azerbaijani button:hover {
+  background-color: #99971e;
+}
+.homework-azerbaijani button {
+  background-color: purple;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.homework-azerbaijani button:hover {
+  background-color: blueviolet;
+}
+.material-azerbaijani button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.material-azerbaijani button:hover {
+  background-color: darkgreen;
+}
+
+.azerbaijani-title {
+  text-align: center;
+  font-size: 28px;
+  color: #05445e;
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.footer-azerbaijani {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.exit-azerbaijani {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+  .header-azerbaijani {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .header-azerbaijani h1 {
+    font-size: 20px;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .azerbaijani-title {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+  .azerbaijani-section {
+    padding: 20px 10px;
+  }
+
+  .row-azerbaijani {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .attendance-azerbaijani,
+  .ksq-azerbaijani,
+  .homework-azerbaijani,
+  .material-azerbaijani {
+    width: 100%;
+    max-width: 350px;
+    flex: none;
+  }
+
+  .container-azerbaijani p {
+    font-size: 16px;
+  }
+
+  .attendance-azerbaijani button,
+  .ksq-azerbaijani button,
+  .homework-azerbaijani button,
+  .material-azerbaijani button,
+  .exit-azerbaijani {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .footer-azerbaijani {
+    margin-top: 30px;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 991px) {
+  .header-azerbaijani {
+    flex-direction: row;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .header-azerbaijani h1 {
+    font-size: 24px;
+  }
+
+  .logo {
+    width: 75px;
+  }
+
+  .azerbaijani-title {
+    font-size: 24px;
+  }
+
+  .row-azerbaijani {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .attendance-azerbaijani,
+  .ksq-azerbaijani,
+  .homework-azerbaijani,
+  .material-azerbaijani {
+    flex: 1 1 calc(50% - 10px);
+  }
+
+  .container-azerbaijani p {
+    font-size: 18px;
+  }
+
+  .attendance-azerbaijani button,
+  .ksq-azerbaijani button,
+  .homework-azerbaijani button,
+  .material-azerbaijani button,
+  .exit-azerbaijani {
+    font-size: 15px;
+    padding: 9px 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-azerbaijani h1 {
+    font-size: 32px;
+  }
+
+  .azerbaijani-title {
+    font-size: 30px;
+  }
+
+  .container-azerbaijani p {
+    font-size: 22px;
+  }
+
+  .attendance-azerbaijani button,
+  .ksq-azerbaijani button,
+  .homework-azerbaijani button,
+  .material-azerbaijani button,
+  .exit-azerbaijani {
+    font-size: 17px;
+    padding: 12px 24px;
+  }
+}

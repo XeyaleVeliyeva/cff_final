@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.header-ksq-physics {
+  width: 100%;
+  padding: 20px;
+  background-color: #9fe5fc;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-ksq-physics h1 {
+  font-size: 32px;
+  color: #05445e;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.logo {
+  width: 90px;
+}
+
+.physicsGrades {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.physicsGrades h2 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.grades-table-physics {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.grades-table-physics thead {
+  background-color: #3498db;
+  color: white;
+}
+
+.grades-table-physics th {
+  padding: 12px 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.grades-table-physics td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.grades-table-physics tbody tr:hover {
+  background-color: #f1f9ff;
+}
+
+.grades-table-physics tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.grades-table-physics td:nth-child(3),
+.grades-table-physics td:nth-child(4),
+.grades-table-physics td:nth-child(5),
+.grades-table-physics td:nth-child(6),
+.grades-table-physics td:nth-child(7) {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.grades-table-physics td:last-child {
+  color: #e74c3c;
+  font-size: 18px;
+}
+
+
+@media (max-width: 600px) {
+  .header-ksq-physics {
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 30px;
+  }
+
+  .header-ksq-physics h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .physicsGrades {
+    padding: 10px;
+    margin: 15px 10px;
+  }
+
+  .physicsGrades h2 {
+    font-size: 18px;
+  }
+
+  .grades-table-physics {
+    font-size: 12px;
+    overflow-x: auto;
+    display: block;
+  }
+
+  .grades-table-physics td:last-child {
+    font-size: 14px;
+  }
+
+  .exit-ksq {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 991px) {
+  .header-ksq-physics {
+    flex-direction: row;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .header-ksq-physics h1 {
+    font-size: 26px;
+  }
+
+  .physicsGrades {
+    padding: 15px;
+    margin: 20px;
+  }
+
+  .physicsGrades h2 {
+    font-size: 22px;
+  }
+
+  .grades-table-physics {
+    font-size: 14px;
+  }
+
+  .grades-table-physics td:last-child {
+    font-size: 16px;
+  }
+
+  .exit-ksq {
+    padding: 10px 18px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-ksq-physics h1 {
+    font-size: 32px;
+  }
+
+  .physicsGrades h2 {
+    font-size: 28px;
+  }
+
+  .grades-table-physics {
+    font-size: 16px;
+  }
+
+  .grades-table-physics td:last-child {
+    font-size: 18px;
+  }
+
+  .exit-ksq {
+    font-size: 16px;
+  }
+}

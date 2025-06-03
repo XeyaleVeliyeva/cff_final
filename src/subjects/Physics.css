@@ -1,0 +1,281 @@
+.header-physics {
+  width: 100%;
+  padding: 20px;
+  background-color: #9fe5fc;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-physics h1 {
+  font-size: 2rem;
+  color: #05445e;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.logo {
+  width: 90px;
+}
+
+.physics-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container-physics {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.row-physics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.attendance-physics,
+.ksq-physics,
+.homework-physics,
+.material-physics {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  flex: 1 1 calc(50% - 10px); /* 2 qutu bir sırada */
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  min-width: 240px;
+}
+
+.attendance-physics:hover, .ksq-physics:hover, .homework-physics:hover, .material-physics:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.container-physics p {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.attendance-physics button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.attendance-physics button:hover {
+  background-color: #0056b3;
+}
+.ksq-physics button {
+  background-color: #e3db0a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.ksq-physics button:hover {
+  background-color: #99971e;
+}
+.homework-physics button {
+  background-color: purple;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.homework-physics button:hover {
+  background-color: blueviolet;
+}
+.material-physics button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.material-physics button:hover {
+  background-color: darkgreen;
+}
+
+.physics-title {
+  text-align: center;
+  font-size: 28px;
+  color: #05445e;
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.footer-physics {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.exit-physics {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+  .header-physics {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .header-physics h1 {
+    font-size: 20px;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .physics-title {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+  .physics-section {
+    padding: 20px 10px;
+  }
+
+  .row-physics {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .attendance-physics,
+  .ksq-physics,
+  .homework-physics,
+  .material-physics {
+    width: 100%;
+    max-width: 350px;
+    flex: none;
+  }
+
+  .container-physics p {
+    font-size: 16px;
+  }
+
+  .attendance-physics button,
+  .ksq-physics button,
+  .homework-physics button,
+  .material-physics button,
+  .exit-physics {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .footer-physics {
+    margin-top: 30px;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 991px) {
+  .header-physics {
+    flex-direction: row;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .header-physics h1 {
+    font-size: 24px;
+  }
+
+  .logo {
+    width: 75px;
+  }
+
+  .physics-title {
+    font-size: 24px;
+  }
+
+  .row-physics {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .attendance-physics,
+  .ksq-physics,
+  .homework-physics,
+  .material-physics {
+    flex: 1 1 calc(50% - 10px);
+  }
+
+  .container-physics p {
+    font-size: 18px;
+  }
+
+  .attendance-physics button,
+  .ksq-physics button,
+  .homework-physics button,
+  .material-physics button,
+  .exit-physics {
+    font-size: 15px;
+    padding: 9px 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-physics h1 {
+    font-size: 32px;
+  }
+
+  .physics-title {
+    font-size: 30px;
+  }
+
+  .container-physics p {
+    font-size: 22px;
+  }
+
+  .attendance-physics button,
+  .ksq-physics button,
+  .homework-physics button,
+  .material-physics button,
+  .exit-physics {
+    font-size: 17px;
+    padding: 12px 24px;
+  }
+}

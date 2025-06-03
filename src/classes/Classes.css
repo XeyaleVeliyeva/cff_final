@@ -1,0 +1,274 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+}
+
+.header-class {
+  background-color:  #9fe5fc;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  height: 90px;
+}
+
+.header-class h1 {
+  font-size: 2rem;
+  color: #05445e;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.class-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.class-teacher {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.teacher_info{
+    border: 2px solid #ccc;
+    border-radius: 12px; 
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.class-exit {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.class-exit:hover {
+  background-color: #0056b3;
+}
+
+.class-teacher h1 {
+  font-weight: bold;
+  color: #333;
+  font-size: 32px;
+}
+
+.class-teacher p {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+
+.class {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.class-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.box {
+  width: 280px;
+  height: 180px;
+  background-color: #9fe5fc;
+  color: #000;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:hover {
+  transform: scale(1.03);
+}
+
+.btn-class {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007acc;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-class:hover {
+  background-color: #005fa3;
+}
+
+@media (max-width: 600px) {
+  .header-class {
+    flex-direction: row;
+    gap: 10px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .header-class h1 {
+    font-size: 20px;
+  }
+
+  .class-teacher {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .class-teacher h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .class-teacher p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .teacher_info {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .class-row {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .box {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .btn-class {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .class-exit {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 991px) {
+  .header-class {
+    flex-direction: row;
+    gap: 15px;
+    padding: 18px;
+  }
+
+  .logo {
+    height: 75px;
+  }
+
+  .header-class h1 {
+    font-size: 26px;
+  }
+
+  .class-teacher {
+    padding: 25px;
+    gap: 25px;
+  }
+
+  .class-teacher h1 {
+    font-size: 28px;
+  }
+
+  .class-teacher p {
+    font-size: 18px;
+  }
+
+  .teacher_info {
+    flex-direction: row;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .class-row {
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+  }
+
+  .box {
+    width: 220px;
+    height: 160px;
+  }
+
+  .btn-class {
+    font-size: 15px;
+    padding: 10px 18px;
+  }
+
+  .class-exit {
+    font-size: 15px;
+    padding: 12px 22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-class h1 {
+    font-size: 32px;
+  }
+
+  .class-teacher h1 {
+    font-size: 32px;
+  }
+
+  .class-teacher p {
+    font-size: 24px;
+  }
+
+  .btn-class {
+    font-size: 16px;
+  }
+
+  .class-exit {
+    font-size: 16px;
+  }
+
+  .box {
+    width: 280px;
+    height: 180px;
+  }
+}

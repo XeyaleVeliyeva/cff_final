@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.header-ksq-azerbaijani {
+  width: 100%;
+  padding: 20px;
+  background-color: #9fe5fc;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-ksq-azerbaijani h1 {
+  font-size: 32px;
+  color: #05445e;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.logo {
+  width: 90px;
+}
+
+.azerbaijaniGrades {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.azerbaijaniGrades h2 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.grades-table-azerbaijani {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.grades-table-azerbaijani thead {
+  background-color: #3498db;
+  color: white;
+}
+
+.grades-table-azerbaijani th {
+  padding: 12px 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.grades-table-azerbaijani td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.grades-table-azerbaijani tbody tr:hover {
+  background-color: #f1f9ff;
+}
+
+.grades-table-azerbaijani tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.grades-table-azerbaijani td:nth-child(3),
+.grades-table-azerbaijani td:nth-child(4),
+.grades-table-azerbaijani td:nth-child(5),
+.grades-table-azerbaijani td:nth-child(6),
+.grades-table-azerbaijani td:nth-child(7) {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.grades-table-azerbaijani td:last-child {
+  color: #e74c3c;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .header-ksq-azerbaijani {
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 30px;
+  }
+
+  .header-ksq-azerbaijani h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .azerbaijaniGrades {
+    padding: 10px;
+    margin: 15px 10px;
+  }
+
+  .azerbaijaniGrades h2 {
+    font-size: 18px;
+  }
+
+  .grades-table-azerbaijani {
+    font-size: 12px;
+    overflow-x: auto;
+    display: block;
+  }
+
+  .grades-table-azerbaijani td:last-child {
+    font-size: 14px;
+  }
+
+  .exit-ksq {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 991px) {
+  .header-ksq-azerbaijani {
+    flex-direction: row;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .header-ksq-azerbaijani h1 {
+    font-size: 26px;
+  }
+
+  .azerbaijaniGrades {
+    padding: 15px;
+    margin: 20px;
+  }
+
+  .azerbaijaniGrades h2 {
+    font-size: 22px;
+  }
+
+  .grades-table-azerbaijani {
+    font-size: 14px;
+  }
+
+  .grades-table-azerbaijani td:last-child {
+    font-size: 16px;
+  }
+
+  .exit-ksq {
+    padding: 10px 18px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-ksq-azerbaijani h1 {
+    font-size: 32px;
+  }
+
+  .azerbaijaniGrades h2 {
+    font-size: 28px;
+  }
+
+  .grades-table-azerbaijani {
+    font-size: 16px;
+  }
+
+  .grades-table-azerbaijani td:last-child {
+    font-size: 18px;
+  }
+
+  .exit-ksq {
+    font-size: 16px;
+  }
+}

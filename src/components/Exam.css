@@ -1,0 +1,256 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.exam-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9fb;
+  color: #333;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.header-exam {
+  width: 100%;
+  padding: 20px;
+  background-color: #9fe5fc;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  height: 90px;
+}
+
+.header-exam h1 {
+  font-size: 32px;
+  color: #05445e;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.exam-content {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+}
+
+.exam-content h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.exam-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;      
+  max-width: 600px; 
+  margin: 0 auto;  
+}
+
+
+.exam-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.exam-form input[type="text"],
+.exam-form input[type="date"],
+.exam-form select,
+.exam-form textarea {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+.exam-form input:focus,
+.exam-form select:focus,
+.exam-form textarea:focus {
+  border-color: #0057a3;
+  outline: none;
+}
+
+.submit-btn {
+  background-color: #0057a3;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #004080;
+}
+
+.confirmation-message {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.exit-btn {
+  background-color: #d9534f; 
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.exit-btn:hover {
+  background-color: #c9302c;
+}
+
+@media (max-width: 600px) {
+  .header-exam {
+    flex-direction: row;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .logo {
+    height: 30px;
+  }
+
+  .header-exam h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .exam-container {
+    padding: 15px;
+  }
+
+  .exam-content {
+    padding: 15px;
+  }
+
+  .exam-content h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .exam-form {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .exam-form label {
+    font-size: 14px;
+  }
+
+  .exam-form input[type="text"],
+  .exam-form input[type="date"],
+  .exam-form select,
+  .exam-form textarea {
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+
+  .exit-btn {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 991px) {
+  .header-exam {
+    flex-direction: row;
+    gap: 15px;
+    padding: 18px;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .header-exam h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .exam-container {
+    padding: 20px;
+  }
+
+  .exam-content h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .exam-form label {
+    font-size: 15px;
+  }
+
+  .exam-form input[type="text"],
+  .exam-form input[type="date"],
+  .exam-form select,
+  .exam-form textarea {
+    font-size: 15px;
+  }
+
+  .submit-btn {
+    font-size: 15px;
+    padding: 11px 18px;
+  }
+
+  .exit-btn {
+    font-size: 15px;
+    padding: 9px 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-exam h1 {
+    font-size: 32px;
+  }
+
+  .exam-content h2 {
+    font-size: 26px;
+  }
+
+  .exam-form label {
+    font-size: 16px;
+  }
+
+  .exam-form input[type="text"],
+  .exam-form input[type="date"],
+  .exam-form select,
+  .exam-form textarea {
+    font-size: 15px;
+  }
+
+  .submit-btn,
+  .exit-btn {
+    font-size: 16px;
+  }
+}
